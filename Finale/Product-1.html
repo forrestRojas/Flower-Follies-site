@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Florist product 1.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Product 1</title>
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="SiteCSS.css">
+		
+		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![endif]-->
+		<style>
+		
+		.flex-it-down {
+			display: flex;
+			flex-flow: column nowrap;
+		}
+		
+		table {
+			align-self: center;
+			width: 50%;
+			margin-top: 15px;
+			padding: 5px 10px 20px;
+			text-align: center;
+			-moz-font-feature-settings:"lnum" 1, "tnum" 1, "afrc" 1; 
+			-ms-font-feature-settings:"lnum" 1, "tnum" 1, "afrc" 1; 
+			-o-font-feature-settings:"lnum" 1, "tnum" 1, "afrc" 1; 
+			-webkit-font-feature-settings:"lnum" 1, "tnum" 1, "afrc" 1; 
+			font-feature-settings:"lnum" 1, "tnum" 1, "afrc" 1;
+			border-top: 1.5pt solid #A3BFA2;
+		}
+		
+		
+		td {
+			font-family: SourceSansProRegular;
+			
+		}
+		
+		
+		tr:first-of-type {
+			font-family: SourceSansProSemibold;
+			height: 10px;
+		}
+		
+		th {
+			padding-bottom: 10px;
+		}
+		
+		td:nth-of-type(2), th:nth-of-type(2) {
+			width: 30px;
+			
+		}
+		
+		
+		td:nth-of-type(2) {
+			text-align: right;
+			
+		}
+		
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1 id="title"><span class="uline">Flower Follies </span><span class="color" style="text-decoration: underline;">Floristr</span><span class="color">y</span></h1>
+		</header>
+
+		<nav>
+		<h2 class="h-null">Navigation Bar</h2>
+			<p>Product 1</p>
+			<ul class="menu">
+				<li><a href="Site_index.html">Home</a></li>
+				<li class="dropdown"><a href="Product_Catalog.html" class="z-up">Product Catalog &#9662;</a>
+					<ul class="dd-menu">
+						<li class="dd-group">Group 1</li>
+						<li><a href="Product-1.html">Product 1</a></li>
+						<li><a href="#">Product 2</a></li>
+						<li class="dd-group">Group 2</li>
+						<li><a href="#">Product 3</a></li>
+						<li><a href="#">Product 4</a></li>
+					</ul>
+				</li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<section id="across" lang="zxx">
+			<h2 class="h-null">Product Catalog</h2>
+				<section class="flex-it">
+				<h3 class="h-null">Group 1</h3>
+					<article>
+					<h4>Product 1</h4>
+						<div>
+							<picture>
+								<img src="FloristInsurance.jpg" alt="product1" style="float:right; height: 333px; width: 500px;">
+							</picture>
+							
+							<div class="flex-it-down">
+								<div>
+									<p>
+									Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+									</p>
+									
+									<p>
+									Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.sectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripui
+									</p>
+								</div>
+								
+								<table>
+									<tr>
+										<th>Pack Size:</th>
+										<th>Price:</th>
+										<th>Buy:</th>
+									</tr>
+									<tr>
+										<td>Small</td>
+										<td>$5.00</td>
+										<td>
+											<form method="post"
+											   action="http://www.webdevfoundations.net/scripts/cart.asp">
+											   <input type="hidden" name="desc1" id="desc1" value="PackSmall">
+											   <input type="hidden" name="cost1" id="cost1" value="5.00">
+											   <input type="submit" value="Add to Cart">
+											</form>
+										</td>
+									</tr>
+									<tr>
+										<td>Medium</td>
+										<td>$10.00</td>
+										<td>
+											<form method="post"
+											   action="http://www.webdevfoundations.net/scripts/cart.asp">
+											   <input type="hidden" name="desc2" id="desc2" value="PackMedium">
+											   <input type="hidden" name="cost2" id="cost2" value="10.00">
+											   <input type="submit" value="Add to Cart">
+											</form>
+										</td>
+									</tr>
+									<tr>
+										<td>Large</td>
+										<td>$15.00</td>
+										<td>
+											<form method="post"
+											   action="http://www.webdevfoundations.net/scripts/cart.asp">
+											   <input type="hidden" name="desc3" id="desc3" value="PackLarge">
+											   <input type="hidden" name="cost3" id="cost3" value="15.00">
+											   <input type="submit" value="Add to Cart">
+											</form>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</article>
+				</section>
+			</section>
+		</main>
+
+		<footer>
+			
+		</footer>
+	</body>
+</html>
