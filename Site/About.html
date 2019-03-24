@@ -6,28 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>About</title>
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
-		<link rel="stylesheet" type="text/css" href="SiteCSS.css">
+		<link rel="stylesheet" href="SiteCSS.css">
 		
 		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![endif]-->
-		<style>
-			#right {
-				align-self: center;
-			}
-			
-			.flex-it {
-				flex-direction: column;
-			}
-		</style>
 	</head>
 
 	<body>
-		<header>
 		<h1 id="title"><span class="uline">Flower Follies </span><span class="color" style="text-decoration: underline;">Floristr</span><span class="color">y</span></h1>
-		</header>
 
-		<nav>
-		<h2 class="h-null">Navigation Bar</h2>
-			<p>About</p>
+		<nav id="site-nav">
+			<header>
+				<h2 class="h-null">Navigation Bar</h2>
+				<p>About</p>
+			</header>
+			
 			<ul class="menu">
 				<li><a href="Site_index.html">Home</a></li>
 				<li class="dropdown"><a href="Product_Catalog.html" class="z-up">Product Catalog &#9662;</a>
@@ -45,41 +37,35 @@
 			</ul>
 		</nav>
 
-		<main>
-			<div id="left">
-				<section lang="zxx">
-				<h2 class="h-null">About</h2>
-					<article>
-					<h3>Who We Are</h3>
-						<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-						
-						<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-					</article>
-					
-					<article>
-					<h3>Our Mission</h3>
-						<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-					</article>
-					
-					<article>
-					<h3>History</h3>
-						<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-						
-						<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-						
-						<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-					</article>
-				</section>
-			</div>
+		<main id="about">
+			<h2 class="h-null">About</h2>
+			<article id="who-we-are">
+				<h3>Who We Are</h3>
+				<p lang="zxx">Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
+				
+				<p lang="zxx">Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
+			</article>
 			
-			<div id="right">
-				<div class="flex-it">
-					<picture>
-						<img src="o.jpg" alt="gardener" style="height: 375px; width: 500px;">
-					</picture>
-					<q>Our Founder: Harry Roswell</q>
-				</div>
-			</div>
+			<article id="mission-statment">
+				<h3>Our Mission</h3>
+				<p lang="zxx">Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
+			</article>
+			
+			<article id="history">
+				<h3>History</h3>
+				<p lang="zxx">Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
+				
+				<p lang="zxx">Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
+				
+				<p lang="zxx">Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
+			</article>
+
+			<aside>
+				<picture>
+					<img src="o.jpg" alt="gardener" style="height: 375px; width: 500px;">
+				</picture>
+				<q>Our Founder: Harry Roswell</q>
+			</aside>
 		</main>
 
 		<footer>
