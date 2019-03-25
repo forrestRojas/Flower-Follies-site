@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home</title>
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
-		<link rel="stylesheet" type="text/css" href="SiteCSS.css">
+		<!--<link rel="stylesheet" type="text/css" href="SiteCSS.css">-->
+		<link rel="stylesheet" type="text/css" href="sitenewCSS.css">
 
 		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![endif]-->
 	</head>
@@ -32,6 +33,7 @@
 						<li><a href="#">Product 4</a></li>
 					</ul>
 				</li>
+				<li class="dropdown-space" role="presentation"></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html">Contact</a></li>
 			</ul>
@@ -77,7 +79,8 @@
 			</p>
 			<aside>
 				<picture>
-					<img src="Kew_Thumb.jpg" alt="Botanical gardens" style="height: 282px; width: 500px;">
+					<source media="(min-width: 465px)" srcset="Kew_Thumb.jpg">
+					<img src="Kew_Thumb.jpg" alt="Botanical gardens">
 				</picture>
 			</aside>
 		</main>
