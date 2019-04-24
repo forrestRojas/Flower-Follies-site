@@ -6,10 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Product 1</title>
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
-		<link rel="stylesheet" type="text/css" href="SiteCSS.css">
+		<link rel="stylesheet" type="text/css" href="sitenewCSS.css">
 		
 		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![endif]-->
-		<style>
+		<!--<style>
 		
 		.flex-it-down {
 			display: flex;
@@ -57,17 +57,18 @@
 			
 		}
 		
-		</style>
+		</style>-->
 	</head>
 
 	<body>
-		<header>
-			<h1 id="title"><span class="uline">Flower Follies </span><span class="color" style="text-decoration: underline;">Floristr</span><span class="color">y</span></h1>
-		</header>
+		<h1 id="title"><span class="uline" role="presentation"><span class="color" role="presentation">Flower Follies</span> Floristr</span>y</h1>
 
-		<nav>
-		<h2 class="h-null">Navigation Bar</h2>
-			<p>Product 1</p>
+		<nav id="site-nav">
+			<header>
+				<h2 class="h-null">Navigation Bar</h2>
+				<p aria-hidden="true">Product 1</p>
+			</header>
+
 			<ul class="menu">
 				<li><a href="Site_index.html">Home</a></li>
 				<li class="dropdown"><a href="Product_Catalog.html" class="z-up">Product Catalog &#9662;</a>
@@ -80,82 +81,80 @@
 						<li><a href="#">Product 4</a></li>
 					</ul>
 				</li>
+				<li class="dropdown-space" role="presentation"></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 		</nav>
 
-		<main>
-			<section id="across" lang="zxx">
-			<h2 class="h-null">Product Catalog</h2>
-				<section class="flex-it">
-				<h3 class="h-null">Group 1</h3>
-					<article>
-					<h4>Product 1</h4>
-						<div>
-							<picture>
-								<img src="FloristInsurance.jpg" alt="product1" style="float:right; height: 333px; width: 500px;">
-							</picture>
-							
-							<div class="flex-it-down">
-								<div>
-									<p>
-									Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
-									</p>
-									
-									<p>
-									Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.sectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripui
-									</p>
-								</div>
-								
-								<table>
-									<tr>
-										<th>Pack Size:</th>
-										<th>Price:</th>
-										<th>Buy:</th>
-									</tr>
-									<tr>
-										<td>Small</td>
-										<td>$5.00</td>
-										<td>
-											<form method="post"
-											   action="http://www.webdevfoundations.net/scripts/cart.asp">
-											   <input type="hidden" name="desc1" id="desc1" value="PackSmall">
-											   <input type="hidden" name="cost1" id="cost1" value="5.00">
-											   <input type="submit" value="Add to Cart">
-											</form>
-										</td>
-									</tr>
-									<tr>
-										<td>Medium</td>
-										<td>$10.00</td>
-										<td>
-											<form method="post"
-											   action="http://www.webdevfoundations.net/scripts/cart.asp">
-											   <input type="hidden" name="desc2" id="desc2" value="PackMedium">
-											   <input type="hidden" name="cost2" id="cost2" value="10.00">
-											   <input type="submit" value="Add to Cart">
-											</form>
-										</td>
-									</tr>
-									<tr>
-										<td>Large</td>
-										<td>$15.00</td>
-										<td>
-											<form method="post"
-											   action="http://www.webdevfoundations.net/scripts/cart.asp">
-											   <input type="hidden" name="desc3" id="desc3" value="PackLarge">
-											   <input type="hidden" name="cost3" id="cost3" value="15.00">
-											   <input type="submit" value="Add to Cart">
-											</form>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</article>
-				</section>
-			</section>
+		<main id="product-1" class="product details-page">
+			<h2 class="h-null">Product 1</h2>
+
+			<picture>
+				<source srcset="FloristInsurance.jpg"/>
+				<img src="FloristInsurance.jpg" alt="product1"/>
+			</picture>
+			
+			<p lang="zxx">
+				Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+				Eam ea error elitr appareat. Per dictas delicata corrumpit ad. 
+				Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+				Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. 
+				Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. 
+				Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+			</p>
+			
+			<p lang="zxx">
+				Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. 
+				Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. 
+				Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. 
+				Eripuit impedit interpretaris ne sed.sectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripui
+			</p>
+				
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">Pack Size:</th>
+						<th scope="col">Price:</th>
+						<th scope="col">Buy:</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Small</td>
+						<td>$5.00</td>
+						<td>
+							<form id="buy-small-form" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp" aria-labelledby="small">
+								<input form="buy-small-form" type="hidden" name="desc1" id="desc1" value="PackSmall">
+								<input form="buy-small-form" type="hidden" name="cost1" id="cost1" value="5.00">
+								<button form="buy-small-form" type="submit" value="Add to Cart">Add to Cart</button>
+							</form>
+						</td>
+					</tr>
+					<tr>
+						<td>Medium</td>
+						<td>$10.00</td>
+						<td>
+							<form id="buy-medium-form" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp" aria-labelledby="medium">
+								<input form="buy-medium-form" type="hidden" name="desc2" id="desc2" value="PackMedium">
+								<input form="buy-medium-form" type="hidden" name="cost2" id="cost2" value="10.00">
+								<button form="buy-medium-form" type="submit" value="Add to Cart">Add To Cart</button>
+							</form>
+						</td>
+					</tr>
+					<tr>
+						<td>Large</td>
+						<td>$15.00</td>
+						<td>
+							<form id="buy-large-form" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp" aria-labelledby="large">
+								<input form="buy-large-form" type="hidden" name="desc3" id="desc3" value="PackLarge">
+								<input form="buy-large-form" type="hidden" name="cost3" id="cost3" value="15.00">
+								<button form="buy-large-form" type="submit" value="Add to Cart">Add to Cart</button>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</main>
 
 		<footer>

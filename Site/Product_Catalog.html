@@ -6,28 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Products</title>
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
-		<link rel="stylesheet" type="text/css" href="SiteCSS.css">
+		<link rel="stylesheet" type="text/css" href="sitenewCSS.css">
 		
 		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![endif]-->
-		<style>
-		
-		.flex-it {
-			flex-flow: column wrap;
-		}
-		
-		article + article {margin-top: 1.5em;}
-		
-		</style>
 	</head>
 
 	<body>
-		<header>
-			<h1 id="title"><span class="uline">Flower Follies </span><span class="color" style="text-decoration: underline;">Floristr</span><span class="color">y</span></h1>
-		</header>
+		<h1 id="title"><span class="uline" role="presentation"><span class="color" role="presentation">Flower Follies</span> Floristr</span>y</h1>		
 
-		<nav>
-		<h2 class="h-null">Navigation Bar</h2>
-			<p>Product Catalog</p>
+		<nav id="site-nav">
+			<header>
+				<h2 class="h-null">Navigation Bar</h2>
+				<p aria-hidden="true">Product Catalog</p>
+			</header>
+			
 			<ul class="menu">
 				<li><a href="Site_index.html">Home</a></li>
 				<li class="dropdown"><a href="Product_Catalog.html" class="z-up">Product Catalog &#9662;</a>
@@ -40,77 +32,104 @@
 						<li><a href="#">Product 4</a></li>
 					</ul>
 				</li>
+				<li class="dropdown-space" role="presentation"></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 		</nav>
 
-		<main>
-			<section id="across" lang="zxx">
+		<main id="product-catalog">
 			<h2 class="h-null">Product Catalog</h2>
-				<section class="flex-it">
+			<section id="catalog-group-1" class="product-group">
 				<h3 class="h3-alt2">Group 1</h3>
-					<article>
+				<article id="product-1" class="product">
 					<h4><a href="Product-1.html">Product 1</a></h4>
-						<div>
-							<picture>
-								<img src="FloristInsurance.jpg" alt="product1" style="float:right; height: 333px; width: 500px;">
-							</picture>
-							
-							<div>
-								<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-								
-								<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-							</div>
-						</div>
-					</article>
+					<picture>
+						<source srcset="FloristInsurance.jpg"/>
+						<img src="FloristInsurance.jpg" alt="product1"/>
+					</picture>
 					
-					<article>
-					<h4><a href="#">Product 2</a></h4>
-						<div>
-							<picture>
-								<img src="FloristInsurance.jpg" alt="product2" style="float:right; height: 333px; width: 500px;">
-							</picture>
-							
-							<div>
-								<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-							</div>
-						</div>
-					</article>
-				</section>
+					<p lang="zxx">
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. 
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. 
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. 
+						Eripuit impedit interpretaris ne sed.
+					</p>
+					
+					<p lang="zxx">
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. 
+						Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+					</p>
+				</article>
 				
-				<section class="flex-it">
-				<h3 class="h3-alt2">Group 2</h3>
-					<article>
-					<h4><a href="#">Product 3</a></h4>
-						<div>
-							<picture>
-								<img src="FloristInsurance.jpg" alt="product3" style="float:right; height: 333px; width: 500px;">
-							</picture>
-							
-							<div>
-								<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-								
-								<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-								
-								<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-							</div>
-						</div>
-					</article>
+				<article id="product-2" class="product">
+					<h4><a href="#">Product 2</a></h4>
+					<picture>
+						<source srcset="FloristInsurance.jpg"/>
+						<img src="FloristInsurance.jpg" alt="product2"/>
+					</picture>
 					
-					<article>
+					<p lang="zxx">
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. 
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. 
+						Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+					</p>
+				</article>
+			</section>
+			
+			<section id="catalog-group-1" class="product-group"> 
+				<h3 class="h3-alt2">Group 2</h3>
+				<article id="product-3" class="product">
+					<h4><a href="#">Product 3</a></h4>
+					<picture>
+						<source srcset="FloristInsurance.jpg"/>					
+						<img src="FloristInsurance.jpg" alt="product3"/>
+					</picture>
+					
+					<p lang="zxx">
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. 
+						Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. Amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+					</p>
+					
+					<p lang="zxx">
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. 
+						Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. 
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. 
+						Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+					</p>
+					
+					<p lang="zxx">
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.Lorem ipsum dolor sit. 
+						Amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. 
+						Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+					</p>
+				</article>
+				
+				<article id="product-4" class="product">
 					<h4><a href="#">Product 4</a></h4>
-						<div>
-							<picture>
-								<img src="FloristInsurance.jpg" alt="product4" style="float:right; height: 333px; width: 500px;">
-							</picture>
-						
-							<div>
-								<p>Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.</p>
-							</div>
-						</div>
-					</article>
-				</section>
+					<picture>
+						<source srcset="FloristInsurance.jpg"/>
+						<img src="FloristInsurance.jpg" alt="product4" />
+					</picture>
+				
+					<p lang="zxx">
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. Eam ea error elitr appareat. 
+						Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed. 
+						Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. 
+						Eripuit impedit interpretaris ne sed. Lorem ipsum dolor sit amet, graeci voluptua consectetuer nec ut. 
+						Eam ea error elitr appareat. Per dictas delicata corrumpit ad. Eripuit impedit interpretaris ne sed.
+					</p>
+				</article>
 			</section>
 		</main>
 

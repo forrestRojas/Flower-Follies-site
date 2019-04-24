@@ -6,49 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact</title>
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
-		<link rel="stylesheet" type="text/css" href="SiteCSS.css">
+		<link rel="stylesheet" href="sitenewCSS.css">
 		
 		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![endif]-->
-		<style>
-		
-			#left > section {
-				box-sizing: border-box;
-				width: 1216px;
-				justify-content: center;
-			}
-				
-			.flex-it {
-				flex-flow: column nowrap;
-				justify-content: center;
-			}
-		
-			.flex-size1 {
-				align-self: center;
-				box-sizing: border-box;
-				width: 608px;
-				
-			}
-		
-		
-			input, textarea {margin-bottom: 1em;}
-			
-			input[type|=submit] {
-				font-family: SourceSansProSemibold;
-				font-size: 100%;
-				padding: 0.5em 0;
-			}
-			
-		</style>
 	</head>
 
 	<body>
-		<header>
-			<h1 id="title"><span class="uline">Flower Follies </span><span class="color" style="text-decoration: underline;">Floristr</span><span class="color">y</span></h1>
-		</header>
+		<h1 id="title"><span class="uline" role="presentation"><span class="color" role="presentation">Flower Follies</span> Floristr</span>y</h1>
 
-		<nav>
-		<h2 class="h-null">Navigation Bar</h2>
-			<p>Contact</p>
+		<nav id="site-nav">
+			<header>
+				<h2 class="h-null">Navigation Bar</h2>
+				<p aria-hidden="true">Contact</p>
+			</header>
+
 			<ul class="menu">
 				<li><a href="Site_index.html">Home</a></li>
 				<li class="dropdown"><a href="Product_Catalog.html" class="z-up">Product Catalog &#9662;</a>
@@ -61,38 +32,32 @@
 						<li><a href="#">Product 4</a></li>
 					</ul>
 				</li>
+				<li class="dropdown-space" role="presentation"></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 		</nav>
 
-		<main>
-			<div id="left">
-				<section>
+		<main id="contact">
+			<header>
 				<h2 class="h-null">Contact</h2>
-					<article class="flex-size1">
-					<h3 class="h-null">Need anything? Feel free to reach us!</h3>
-						<p class="h2-alt">Contact Us</p>
-						<p>Need anything? Feel free to reach us!</p>
-					</article>
-					
-					<article>
-					<h3 class="h-null">Contact Form</h3>
-						<form action="http://webdevbasics.net/scripts/javajam.php" method="post" class="flex-it">
-							<label for="myName">*Name:</label>
-							<input type="text" name="myName" id="myName" required>
-							<label for="myEmail">*E-mail:</label>
-							<input type="email" name="myEmail" id="myEmail" required>
-							<label for="myComment">*Comment:</label>
-							<textarea rows="10" cols="20" name="myComment" id="myComment" required></textarea>
-							<input type="submit" value="Submit" id="mySubmit">
-						</form>
-					</article>
-				</section>
-			</div>
-			<div id="right">
+				<p class="h2-alt">Contact Us</p>
+			</header>
 			
-			</div>
+			<form id="contact-form" action="http://webdevbasics.net/scripts/javajam.php" method="post" aria-labelledby="contact">
+				<p>Need anything? Feel free to reach us!</p>
+
+				<label form="contact-form" for="myName" >*Name:</label>
+				<input form="contact-form" id="myName" name="myName" type="text" required>
+
+				<label form="contact-form" for="myEmail">*E-mail:</label>
+				<input form="contact-form" id="myEmail" name="myEmail" type="email" required>
+
+				<label form="contact-form" for="myComment">*Comment:</label>
+				<textarea form="contact-form" id="myComment" name="myComment" rows="10" cols="20" required></textarea>
+
+				<button form="contact-form" id="mySubmit" type="submit" value="Submit">Submit</button>
+			</form>
 		</main>
 
 		<footer>
