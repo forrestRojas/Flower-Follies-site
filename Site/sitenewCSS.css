@@ -279,9 +279,9 @@ main#about, main#home {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8b', endColorstr='#E0F1D6',GradientType=0 ); /* IE6-9 */
     }
 
-main#product-catalog > section > article {
-    margin: 0 2rem;
-}
+    main#product-catalog > section > article {
+        margin: 0 2rem;
+    }
 
 
 aside {
