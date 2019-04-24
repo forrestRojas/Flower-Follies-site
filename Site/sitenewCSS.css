@@ -170,10 +170,6 @@ h4 a:hover{
 	box-shadow: var(--main-box-shadow);
 }
 
-p {
-    //color: ;
-}
-
 p  + .h3-alt2 {
     margin-top: 1em;
 }
@@ -269,8 +265,7 @@ main {
 
 /*---Main Layouts---*/
 main#about, main#home {
-    grid-template-areas: 
-        ". aside"
+    grid-auto-flow: column;
 }
 
     main#product-catalog > section {
@@ -292,8 +287,6 @@ main#product-catalog > section > article {
 aside {
     display: flex;
     flex-flow: column nowrap;
-    grid-area: aside;
-    grid-row-end: bar;
 }
 
 /* style="height: 282px; width: 500px;"*/
