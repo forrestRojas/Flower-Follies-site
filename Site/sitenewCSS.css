@@ -268,9 +268,12 @@ main#about, main#home {
     grid-auto-flow: column;
 }
 
+main#about article, main#home article {
+    margin-bottom: 5rem;
+}
+
     main#product-catalog > section {
         display: grid;
-        row-gap: 1rem;
         padding-bottom: 1em;
         background: #E0F1D6; /* Old browsers */
         background: -moz-linear-gradient(top, #cdeb8b 0%, #E0F1D6 100%); /* FF3.6-15 */
