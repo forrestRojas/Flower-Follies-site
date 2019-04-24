@@ -175,6 +175,9 @@ p  + .h3-alt2 {
 }
 
 
+form {
+    display: inline-grid;
+}
 
 
 #title {
@@ -286,6 +289,10 @@ main#about article, main#home article {
         margin: 0 2rem;
     }
 
+
+main#contact {
+    display: block;
+}
 
 aside {
     display: flex;
